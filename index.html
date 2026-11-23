@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cursos | Aprenda no seu ritmo</title>
+<style>
+  :root{--pri:#4f46e5;--pri2:#7c3aed;--ink:#0f172a;--mut:#64748b;--bg:#f8fafc;--ok:#16a34a}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+  header{position:sticky;top:0;background:#fffffff2;backdrop-filter:blur(8px);border-bottom:1px solid #e2e8f0;z-index:10}
+  nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .logo{font-weight:800;font-size:1.3rem;color:var(--pri)}
+  nav ul{display:flex;gap:28px;list-style:none;color:var(--mut);font-weight:500}
+  .btn{display:inline-block;padding:12px 24px;border-radius:10px;font-weight:700;background:var(--pri);color:#fff;transition:.2s}
+  .btn:hover{background:var(--pri2);transform:translateY(-1px)}
+  .btn.ghost{background:transparent;color:var(--pri);border:2px solid var(--pri)}
+  .hero{background:linear-gradient(135deg,var(--pri),var(--pri2));color:#fff;padding:96px 0 112px;text-align:center}
+  .tag{display:inline-block;background:#ffffff26;padding:6px 14px;border-radius:999px;font-size:.85rem;margin-bottom:18px}
+  .hero h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.15;margin-bottom:18px}
+  .hero p{font-size:1.15rem;opacity:.9;max-width:640px;margin:0 auto 32px}
+  .hero .btn{background:#fff;color:var(--pri)}
+  .hero .btn.ghost{background:transparent;color:#fff;border-color:#fff;margin-left:12px}
+  .stats{display:flex;justify-content:center;gap:48px;margin-top:56px;flex-wrap:wrap}
+  .stats b{display:block;font-size:2rem}
+  section{padding:88px 0}
+  h2{font-size:2rem;text-align:center;margin-bottom:12px}
+  .sub{text-align:center;color:var(--mut);margin-bottom:48px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+  .card{border:1px solid #e2e8f0;border-radius:16px;overflow:hidden;background:#fff;transition:.2s;display:flex;flex-direction:column}
+  .card:hover{box-shadow:0 20px 40px #0f172a14;transform:translateY(-4px)}
+  .thumb{height:160px;display:flex;align-items:center;justify-content:center;font-size:3rem;color:#fff}
+  .body{padding:22px;flex:1;display:flex;flex-direction:column}
+  .badge{font-size:.75rem;font-weight:700;color:var(--pri);text-transform:uppercase;letter-spacing:.05em}
+  .card h3{margin:6px 0 8px}
+  .card p{color:var(--mut);font-size:.95rem;flex:1}
+  .meta{display:flex;gap:16px;font-size:.85rem;color:var(--mut);margin:16px 0}
+  .price{display:flex;align-items:baseline;gap:10px;margin-bottom:16px}
+  .price s{color:var(--mut)}
+  .price b{font-size:1.6rem}
+  .card .btn{text-align:center}
+  .alt{background:var(--bg)}
+  .feat{text-align:center;padding:12px}
+  .feat .ic{font-size:2.2rem;margin-bottom:10px}
+  .quote{background:#fff;border-radius:16px;padding:28px;border:1px solid #e2e8f0}
+  .quote p{font-style:italic;margin-bottom:16px}
+  .quote span{color:var(--mut);font-size:.9rem}
+  .stars{color:#f59e0b;margin-bottom:10px}
+  .plans .card{padding:32px;text-align:center}
+  .plans .card.hot{border:2px solid var(--pri);position:relative}
+  .hot::before{content:"Mais escolhido";position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--pri);color:#fff;font-size:.75rem;padding:4px 12px;border-radius:999px}
+  .plans ul{list-style:none;text-align:left;margin:20px 0;color:var(--mut)}
+  .plans li{padding:6px 0}
+  .plans li::before{content:"✓ ";color:var(--ok);font-weight:700}
+  details{border-bottom:1px solid #e2e8f0;padding:18px 0;max-width:760px;margin:0 auto}
+  summary{font-weight:600;cursor:pointer}
+  details p{color:var(--mut);margin-top:10px}
+  .cta{background:var(--ink);color:#fff;text-align:center}
+  .cta p{opacity:.8;margin-bottom:28px}
+  footer{padding:32px 0;text-align:center;color:var(--mut);font-size:.9rem}
+  @media(max-width:720px){nav ul{display:none}.hero .btn.ghost{margin:12px 0 0}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+  <a class="logo" href="#">Cursos</a>
+  <ul><li><a href="#cursos">Cursos</a></li><li><a href="#beneficios">Benefícios</a></li><li><a href="#planos">Planos</a></li><li><a href="#faq">Dúvidas</a></li></ul>
+  <a class="btn" href="#planos">Começar agora</a>
+</nav></div></header>
+
+<section class="hero"><div class="wrap">
+  <span class="tag">🎓 Novas turmas abertas</span>
+  <h1>Aprenda uma habilidade nova<br>e dê o próximo passo na carreira</h1>
+  <p>Cursos práticos, direto ao ponto, com projetos reais e certificado. Estude no seu ritmo, de qualquer lugar.</p>
+  <a class="btn" href="#cursos">Ver cursos</a><a class="btn ghost" href="#planos">Conhecer os planos</a>
+  <div class="stats"><div><b>[nº]</b>alunos</div><div><b>[nº]</b>cursos</div><div><b>[nota]</b>avaliação média</div></div>
+</div></section>
+
+<section id="cursos"><div class="wrap">
+  <h2>Cursos em destaque</h2>
+  <p class="sub">Escolha por onde começar. Todos com acesso vitalício.</p>
+  <div class="grid">
+    <div class="card"><div class="thumb" style="background:linear-gradient(135deg,#4f46e5,#06b6d4)">💻</div><div class="body">
+      <span class="badge">Iniciante</span><h3>Programação do Zero</h3>
+      <p>Lógica, Python e seus primeiros projetos, sem precisar de experiência prévia.</p>
+      <div class="meta"><span>⏱ [X]h</span><span>📚 [X] aulas</span><span>⭐ [nota]</span></div>
+      <div class="price"><s>R$ [de]</s><b>R$ [por]</b></div><a class="btn" href="#planos">Quero este curso</a></div></div>
+    <div class="card"><div class="thumb" style="background:linear-gradient(135deg,#7c3aed,#ec4899)">📊</div><div class="body">
+      <span class="badge">Intermediário</span><h3>Planilhas e Análise de Dados</h3>
+      <p>Do Excel e Google Sheets a painéis que ajudam a tomar decisão.</p>
+      <div class="meta"><span>⏱ [X]h</span><span>📚 [X] aulas</span><span>⭐ [nota]</span></div>
+      <div class="price"><s>R$ [de]</s><b>R$ [por]</b></div><a class="btn" href="#planos">Quero este curso</a></div></div>
+    <div class="card"><div class="thumb" style="background:linear-gradient(135deg,#f59e0b,#ef4444)">🚀</div><div class="body">
+      <span class="badge">Avançado</span><h3>Desenvolvimento Web</h3>
+      <p>HTML, CSS, JavaScript e deploy, até colocar seu site no ar.</p>
+      <div class="meta"><span>⏱ [X]h</span><span>📚 [X] aulas</span><span>⭐ [nota]</span></div>
+      <div class="price"><s>R$ [de]</s><b>R$ [por]</b></div><a class="btn" href="#planos">Quero este curso</a></div></div>
+  </div>
+</div></section>
+
+<section id="beneficios" class="alt"><div class="wrap">
+  <h2>Por que estudar aqui</h2><p class="sub">Tudo pensado para você aprender de verdade.</p>
+  <div class="grid">
+    <div class="feat"><div class="ic">🎯</div><h3>Prática desde a 1ª aula</h3><p>Projetos reais para montar portfólio.</p></div>
+    <div class="feat"><div class="ic">⏰</div><h3>No seu ritmo</h3><p>Acesso 24h pelo computador ou celular.</p></div>
+    <div class="feat"><div class="ic">📜</div><h3>Certificado</h3><p>Certificado de conclusão em cada curso.</p></div>
+    <div class="feat"><div class="ic">💬</div><h3>Suporte</h3><p>Tire dúvidas com instrutores e a comunidade.</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>O que dizem os alunos</h2><p class="sub">[Depoimentos de exemplo, troque pelos reais]</p>
+  <div class="grid">
+    <div class="quote"><div class="stars">★★★★★</div><p>"[Depoimento do aluno sobre o resultado que teve com o curso.]"</p><span>[Nome], [profissão]</span></div>
+    <div class="quote"><div class="stars">★★★★★</div><p>"[Depoimento do aluno sobre a didática e o suporte.]"</p><span>[Nome], [profissão]</span></div>
+    <div class="quote"><div class="stars">★★★★★</div><p>"[Depoimento do aluno sobre a mudança de carreira.]"</p><span>[Nome], [profissão]</span></div>
+  </div>
+</div></section>
+
+<section id="planos" class="alt plans"><div class="wrap">
+  <h2>Escolha seu plano</h2><p class="sub">Garantia de [7] dias: se não gostar, devolvemos seu dinheiro.</p>
+  <div class="grid">
+    <div class="card"><h3>Curso avulso</h3><div class="price" style="justify-content:center"><b>R$ [valor]</b></div>
+      <ul><li>1 curso à escolha</li><li>Acesso vitalício</li><li>Certificado</li></ul><a class="btn ghost" href="#">Escolher</a></div>
+    <div class="card hot"><h3>Assinatura anual</h3><div class="price" style="justify-content:center"><b>R$ [valor]/mês</b></div>
+      <ul><li>Todos os cursos</li><li>Novos cursos inclusos</li><li>Certificados</li><li>Suporte prioritário</li></ul><a class="btn" href="#">Assinar agora</a></div>
+    <div class="card"><h3>Empresas</h3><div class="price" style="justify-content:center"><b>Sob consulta</b></div>
+      <ul><li>Licenças para equipes</li><li>Relatórios de progresso</li><li>Trilhas personalizadas</li></ul><a class="btn ghost" href="#">Falar com vendas</a></div>
+  </div>
+</div></section>
+
+<section id="faq"><div class="wrap">
+  <h2>Dúvidas frequentes</h2><p class="sub"></p>
+  <details><summary>Por quanto tempo tenho acesso?</summary><p>[Resposta: acesso vitalício no curso avulso, ou enquanto a assinatura estiver ativa.]</p></details>
+  <details><summary>Preciso de experiência prévia?</summary><p>[Resposta: os cursos iniciantes partem do zero.]</p></details>
+  <details><summary>Quais as formas de pagamento?</summary><p>[Resposta: Pix, cartão em até X vezes e boleto.]</p></details>
+  <details><summary>Recebo certificado?</summary><p>[Resposta: sim, ao concluir cada curso.]</p></details>
+</div></section>
+
+<section class="cta"><div class="wrap">
+  <h2>Pronto para começar?</h2><p>Garanta sua vaga com o preço de lançamento.</p>
+  <a class="btn" href="#planos">Quero me inscrever</a>
+</div></section>
+
+<footer><div class="wrap">© 2026 Cursos · [contato@seudominio.com] · Termos · Privacidade</div></footer>
+</body>
+</html>
